@@ -8,7 +8,6 @@ fun main(args: Array<String>) {
     val europe = Graph<String>("EU")
     europe.add("Spain","Portugal","England","France","Wales")
     println("Israel is in EU? ${"Israel" in europe}")
-//    franceNode?.bfs { println(it) }
     europe.connect("Spain","Portugal")
     europe.connect("Portugal","France")
     europe.connect("France","England")
